@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "Variables financieras"
+name = "Analisis Dolar"
 version = "0.1.0"
 description = ""
 authors = ["Walter Gomez"]
@@ -23,4 +23,4 @@ build-backend = "poetry.core.masonry.api"
 primaryColor = "#FCF3CF"
 backgroundColor = "#FCF3CF"
 secondaryBackgroundColor = "#F8C471"
-textColor = "#1C2833"
+textColor = "d5d7da"
