@@ -5,9 +5,8 @@ import base64
 import warnings
 warnings.simplefilter("ignore", category=FutureWarning)
 
-
 #Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
-st.set_page_config(page_title="Financial Analysis", page_icon=":📊:", layout="wide")
+st.set_page_config(page_title="Analisis Dólar", page_icon=":📊:", layout="wide")
 
 #----imagen en background y sider ---
 def get_base64(bin_file):
@@ -25,29 +24,21 @@ def set_background(png_file):
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-set_background("images/fondo_muro_1.jpg")
 
-# side bar--- y redimencionar la imagen
-#img = cv2.imread("images/analisisfin.png")
-#scale_porcent = 30
-#width = int(img.shape[1]*scale_porcent/100)
-#heigth = int(img.shape[0]*scale_porcent/100)
-#dim =(width, heigth)
-#resized = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
+set_background("images/fondodos.jpg")
 
-#st.sidebar.image("images/analisisfin.png", caption="Walter Gomez Financial Consultant")
 
 st.sidebar.image("images/grafico5.gif", caption="Walter Gomez Financial Consultant")
 
 st.markdown(
-    """
-<style>
-sidebar  {
-    background-image: ('images/sider.jpg'));
-}
-</style>
-""",
-    unsafe_allow_html=True,
+    '''
+    <style>
+    sidebar {
+        background-image: linear-gradiant('images/imge-slide.jpg'));
+    }
+    </style>
+    ''',
+        unsafe_allow_html=True,
 )
 
 # despliegue de imagen lottier
@@ -79,13 +70,13 @@ with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
     with left_column:
-        st.title("Análisis de Variables Financieras 📈")
-        st.subheader("variables para el análisis son :")
+        st.title("Análisis de Dólar Blue-MEP-CCL")
+        st.subheader("De desarrolla los siguientes temas :")
         #st.write("#")
         st.subheader(
-            "Dólar Blue, Dólar CCL, Dólar Mep, Dólar Crypto, Indice Merval, Tasa Plazo Fijo, Inflación(ind. de precio minorista/mayorista)."
+            "Evolución de la brecha cambiaria, probabilidad de suba o baja, proyecciones."
         )
-        st.write("Fuente: BCRA, BYMA, ambito financiero ." )
+        st.write("Fuente: BCRA, BYMA, ambito financiero.")
     with right_column:
         #st.write("#")
         #st.write("#")
@@ -102,12 +93,12 @@ with st.container():
         #st.subheader("Contenido de la página")
         #st.write("##")
         #st.write("##")
-        st.subheader("En la barra lateral accedemos :" )
-        st.subheader("- Gráficos de Evolución Variables (diario)")
-        st.subheader("- Gráficos Evol. Nominal vs Evol. inflación (mensual)")
-        st.subheader("- Gráficos de Variables Deflactadas (mensual)")
-        st.subheader("- Gráficos de rentabilidad y volatilidad (mensual)")
-        st.subheader("- Gráficos de predicción de rentabilidad-animaciones de rendimientos (mensual)")
+        st.subheader("En la barra lateral accedemos")
+        st.subheader("- Análisis de Brechas de Dolar")
+        st.subheader("- Análisis de Probabilidades del Dolar")
+        st.subheader("- Análsis de CCL")
+        st.subheader("- Predicción de tipo de cambio")
+        st.subheader("- Análisis de Acciones(en U$D)")
     with right_column:
         st.write("#")
         #st.write("#")
