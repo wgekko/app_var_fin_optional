@@ -34,7 +34,7 @@ def set_background(png_file):
     ''' % bin_str
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-set_background("images/fondodos.jpg")
+set_background("images/fondo_muro_1.jpg")
 
 
 st.sidebar.image("images/grafico4.gif", caption="Walter Gomez Financial Consultant")
